@@ -1,0 +1,68 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/eevee.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: '03 - Default',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'UVS',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/eevee.fbx',
+    name: 'eevee',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models\\eevee.fbm\\UVS.jpg',
+      name: 'UVS',
+      pipeline_name: 'eevee.fbm\\UVS.jpg',
+    },
+  ],
+  version: '0.54:2',
+}
